@@ -32,8 +32,8 @@
                     <td class="text-center">{{ $train->arrival_date }}</td>
                     <td class="text-center">{{ $train->train_code }}</td>
                     <td class="text-center">{{ $train->number_of_carriages }}</td>
-                    <td class="text-center">{{ $train->on_time }}</td>
-                    <td class="text-center">{{ $train->deleted }}</td>
+                    <td class="text-center">{{ $train->on_time ? 'si' : 'no' }}</td>
+                    <td class="text-center">{{ $train->deleted ? 'si' : 'no' }}</td>
                 </tr>
             @endforeach
         </tbody>
